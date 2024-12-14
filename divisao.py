@@ -1,7 +1,5 @@
-import pyautogui
 def divisao(a,b):
-    try:
+        if(b == 0):
+                print("Divisão impossível!")
         divisao = a/b
         return divisao
-    except ZeroDivisionError:
-        pyautogui.alert("Não é possível dividir!")
